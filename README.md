@@ -2,6 +2,25 @@
 
 A comprehensive toolkit for profiling and visualizing performance of Python libraries that contain Python, C++, and C code using `gprof2dot`.
 
+
+  export TARGET=test_extension.py
+  make profile
+
+or
+
+  make profile TARGET=test_extension.py
+
+or
+
+  python profile_mixed_library.py test_extension.py --method cprofile
+
+To profile C/C++ extensions, you must be on Linux:
+
+  make profile-native
+
+---
+
+
 ## Features
 
 - **Multiple profiling methods**: cProfile, py-spy, pyinstrument, perf, valgrind

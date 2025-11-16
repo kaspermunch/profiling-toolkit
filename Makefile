@@ -96,7 +96,7 @@ endif
 
 # View the most recent SVG output
 .PHONY: view
-view:
+view: 
 	@if [ -d $(OUTPUT_DIR) ]; then \
 		latest=$$(ls -t $(OUTPUT_DIR)/*.svg 2>/dev/null | head -1); \
 		if [ -n "$$latest" ]; then \
