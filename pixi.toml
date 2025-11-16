@@ -1,0 +1,16 @@
+[workspace]
+authors = ["Kasper Munch <kaspermunch@birc.au.dk>"]
+channels = ["conda-forge", "munch-group"]
+name = "profiling-toolkit"
+platforms = ["osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+gprof2dot = ">=2024.6.6,<2025"
+py-spy = ">=0.4.1,<0.5"
+pyinstrument = ">=5.1.1,<6"
+austin-python = ">=2.1.2,<3"
+numpy = ">=2.3.4,<3"
+pip = ">=25.3,<26"
